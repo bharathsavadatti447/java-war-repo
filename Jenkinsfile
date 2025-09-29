@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        GIT_REPO = 'https://github.com/bharathsavadatti447/git_assignment_27092025.git'
+        GIT_REPO = 'https://github.com/bharathsavadatti447/java-war-repo.git'
         BRANCH = 'main'
         EMAIL_RECIPIENTS = 'bharath.savadatti447@gmail.com'
         CUSTOM_SRC = '.'  // Java files location
