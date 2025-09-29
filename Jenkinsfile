@@ -36,7 +36,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo "Deploy the Artifact..."
+                echo "Deploying the Artifact..."
+                sh 'scp /home/ubuntu/workspace/Project_9/target/war ubuntu@3.80.92.210:/root/apache-tomcat-9.0.109/webapps'
 
             }
         }
