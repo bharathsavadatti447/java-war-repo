@@ -16,8 +16,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: "main"
-                url: 'https://github.com/bharathsavadatti447/java-war-repo.git'
+                git branch: "main", url: 'https://github.com/bharathsavadatti447/java-war-repo.git'
             }
         }
 
