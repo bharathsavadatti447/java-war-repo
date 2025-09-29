@@ -46,8 +46,8 @@ pipeline {
         success {
             echo "✔️BUILD AND TEST STAGE SUCCESSFUL...!!!"
             // Updated: allow empty results to prevent failure if no tests
-            junit allowEmptyResults: true, testResults: '**/target/surefire-reports/TEST-*.xml'
-            archiveArtifacts artifacts: 'target/*.jar', onlyIfSuccessful: true
+            junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
+            archiveArtifacts artifacts: 'target/*.war', onlyIfSuccessful: true
         }
 
         failure {
